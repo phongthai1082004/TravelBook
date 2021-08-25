@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/gird.css">
+    <link rel="stylesheet" href="./assets/style/base.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header__wrapper">
+            <div class="header grid wide section__wrapper">
+                <label for="nav__menu-icon" class="nav__icons nav__icons--menu">
+                    <i class="nav__icon nav__icon--menu fas fa-bars"></i>
+                </label>
+                <input type="checkbox" hidden class="nav__show-menu" name="" id="nav__menu-icon">
+                <a class="header__logo">
+                    <p class="header__logo-text">
+                        <span>T</span>RAVEL
+                    </p>
+                </a>
+                <div class="nav">
+                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">Book</a>
+                    <a href="#" class="nav__link">Package</a>
+                    <a href="#" class="nav__link">Services</a>
+                    <a href="#" class="nav__link">Gallery</a>
+                    <a href="#" class="nav__link">Review</a>
+                    <a href="#" class="nav__link">Contact</a>
+                    
+                </div>
+                <div class="nav__icons">
+                    <div class="nav__search">
+                        <label for ="nav__icon--active" class="nav__icon nav__icon--hover nav__icon--active fas fa-search"></label>
+                        <input type="checkbox" name="" hidden class="active" id="nav__icon--active">
+                        <div class="nav__searchbar">
+                            <input type="text" class="input" placeholder="Search here..." id="nav__icon--activate">
+                            <i class="nav__icon fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="nav__contact">
+                        <label for="login__section" class="nav__icon nav__icon--hover fas fa-user"></label>
+                        <input type="checkbox" name="" hidden id="login__section">
+                        <!-- form -->
+                        
+                            <label for="login__section" class="login__overlay">
+                            </label>
+                            
+                                <form class="login__form" action="">
+                                    <h3 class="login__heading">Login</h3>
+                                    <input type="text" placeholder="Enter Your Email" class="login__input">
+                                    <input type="text" placeholder="Enter Your Password" class="login__input">
+                                    <a href="#" class="button button--full">Login Now</a>
+                                    <div class="remember__check">
+                                        <input type="checkbox" name="" id="" class=""><span class="login__checkbox-sub">Remember Me</span>
+                                    </div>
+                                    <p class="login__text">Forgot Password? <span>Click Here</span></p>
+                                    <p class="login__text">Don't Have And Account?<span>Register Now</span></p>
+                                </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app">
+            <div class="slider">
+                <img src="./assets/img/tải xuống (2).jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <div class="slider__heading">ADVENTURE IS WORTHWHILE</div>
+                    <div class="slider__sub-heading">Discover New Places With Us, Adventure Awaits</div>
+                    <a href="#" class="button">Discover More</a>
+                </div>
+            </div>
+
+            <div class="section" id="book">
+                <div class="grid wide section__wrapper">
+                    <h1 class="section__heading">
+                        <span class="letter">B</span>
+                        <span class="letter">O</span>
+                        <span class="letter">O</span>
+                        <span class="letter">K</span>
+                        <span class="letter space"></span>
+                        <span class="letter">N</span>
+                        <span class="letter">O</span>
+                        <span class="letter">W</span>
+                    </h1>
+                    <div class="book-now row">
+                        <div class="col l-6 m-12 c-12">
+                            <img src="./assets/img/book-img.png" alt="" class="book-img">
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <form action="" class="book-now__form">
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">Where To</h3>
+                                    <input type="text" name="" id="" placeholder="Place Name" class="book-now__input">
+                                </div>
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">How Many</h3>
+                                    <input type="text" name="" id="" placeholder="Number of Guest" class="book-now__input">
+                                </div>
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">Arrivals</h3>
+                                    <label for="datemax-arrival"></label>
+                                    <input type="date" id="datemax-arrival" max="1979-12-31" name="" id="" class="book-now__input">
+                                </div>
+                                <div class="input-box">
+                                    <h3 class="book-now__heading">Leaving</h3>
+                                    <label for="datemax-leaving"></label>
+                                    <input type="date" max="1979-12-31" name="" id="datemax-leaving" class="book-now__input">
+                                </div>
+                                <div class="button">Book Now</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="grid wide section__wrapper">
+                    <h1 class="section__heading">
+                        <span class="letter">P</span>
+                        <span class="letter">A</span>
+                        <span class="letter">C</span>
+                        <span class="letter">K</span>
+                        <span class="letter">A</span>
+                        <span class="letter">G</span>
+                        <span class="letter">E</span>
+                        <span class="letter">S</span>
+                    </h1>
+                    <div class="package row">
+                        <div class="package__item col l-4 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-1.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Mumbai
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-4 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-2.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Hawaii
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-4 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-3.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Sydney
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-4 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-4.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Paris
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-4 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-5.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Tokyo
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-4 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-6.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Egypt
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-6 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-1.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Mumbai
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package__item col l-6 m-6 c-12">
+                            <div class="package__item-wrapper">
+                                <img src="./assets/img/p-2.jpg" alt="" class="package__img">
+                                <div class="package__content">
+                                    <h3 class="package__item-heading">
+                                        <i class="package__item-icon fas fa-map-marker-alt"></i>
+                                        Hawaii
+                                    </h3>
+                                    <p class="package__item-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                                    <div class="package__item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="package__item-price">
+                                        <span class="package__item-price-full">$90.00</span>
+                                        <span class="package__item-price-sale">$120.00</span>
+                                    </div>
+                                    <a class="button">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="grid wide section__wrapper">
+                    <h1 class="section__heading">
+                        <span class="letter">S</span>
+                        <span class="letter">E</span>
+                        <span class="letter">R</span>
+                        <span class="letter">V</span>
+                        <span class="letter">I</span>
+                        <span class="letter">C</span>
+                        <span class="letter">E</span>
+                        <span class="letter">S</span>
+                    </h1>
+                    <div class="service__item row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="service__item-wrapper">
+                                <i class="service-icon fas fa-hotel"></i>
+                                <h3 class="service__heading">Affordable Hotels</h3>
+                                <p class="service__des">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="service__item-wrapper">
+                                <i class="service-icon fas fa-utensils"></i>
+                                <h3 class="service__heading">Food and Drinks</h3>
+                                <p class="service__des">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="service__item-wrapper">
+                                <i class="service-icon fas fa-bullhorn"></i>
+                                <h3 class="service__heading">Safety Guide</h3>
+                                <p class="service__des">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="service__item-wrapper">
+                                <i class="service-icon fas fa-globe-europe"></i>
+                                <h3 class="service__heading">Around The World</h3>
+                                <p class="service__des">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="service__item-wrapper">
+                                <i class="service-icon fas fa-plane"></i>
+                                <h3 class="service__heading">Plane</h3>
+                                <p class="service__des">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="service__item-wrapper">
+                                <i class="service-icon fas fa-hiking"></i>
+                                <h3 class="service__heading">Adventure</h3>
+                                <p class="service__des">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="grid wide section__wrapper section__wrapper">
+                    <h1 class="section__heading">
+                        <span class="letter">G</span>
+                        <span class="letter">A</span>
+                        <span class="letter">L</span>
+                        <span class="letter">L</span>
+                        <span class="letter">E</span>
+                        <span class="letter">R</span>
+                        <span class="letter">Y</span>
+                    </h1>
+                    <div class="row">
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-1.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-2.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-3.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-4.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-5.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-6.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-7.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-6 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-8.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item col l-4 m-12 c-12">
+                            <div class="gallery__item-wrapper">
+                                <img src="./assets/img/g-9.jpg" alt="" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <div class="gallery__overlay-wrapper">
+                                        <h3 class="gallery__overlay-heading">AMAZING PLACES</h3>
+                                        <P class="gallerty__overlay-des">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</P>
+                                        <a href="#" class="button button--inline">SEE MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="grid wide section__wrapper">
+                    <h1 class="section__heading">
+                        <span class="letter">R</span>
+                        <span class="letter">E</span>
+                        <span class="letter">V</span>
+                        <span class="letter">I</span>
+                        <span class="letter">E</span>
+                        <span class="letter">W</span>
+                    </h1>
+                    <div class="comment row">
+                        <div class="comment__item col l-4 m-4 c-12">
+                            <div class="comment__item-wrapper">
+                                <img src="./assets/img/pic1.png" alt="" class="comment__img">
+                                <h3 class="comment__heading">Tatiana</h3>
+                                <div class="comment__des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</div>
+                                <div class="package__item-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__item col l-4 m-4 c-12">
+                            <div class="comment__item-wrapper">
+                                <img src="./assets/img/dalimask.jpg" alt="" class="comment__img">
+                                <h3 class="comment__heading">Berlin</h3>
+                                <div class="comment__des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</div>
+                                <div class="package__item-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__item col l-4 m-4 c-12">
+                            <div class="comment__item-wrapper">
+                                <img src="./assets/img/pic3.png" alt="" class="comment__img">
+                                <h3 class="comment__heading">Michelle</h3>
+                                <div class="comment__des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</div>
+                                <div class="package__item-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="grid wide section__wrapper">
+                    <h1 class="section__heading">
+                        <span class="letter">C</span>
+                        <span class="letter">O</span>
+                        <span class="letter">N</span>
+                        <span class="letter">T</span>
+                        <span class="letter">A</span>
+                        <span class="letter">C</span>
+                        <span class="letter">T</span>
+                    </h1>
+                    <div class="row">
+                        <div class="col l-5 m-5 c-12">
+                            <img src="./assets/img/book-img.png" alt="" class="contact__img">
+                        </div>
+                        <div class="contact-item col l-7 m-7 c-12">
+                            <form action="" class="contact__form">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-6">
+                                        <input type="text" placeholder="Name" class="contact__input">
+                                    </div>
+                                    <div class="col l-6 m-6 c-6">
+                                        <input type="text" placeholder="Email" class="contact__input">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-6">
+                                        <label for="quantity"></label>
+                                        <input type="number" id="quantity "placeholder="Number" class="contact__input">
+                                    </div>
+                                    <div class="col l-6 m-6 c-6">
+                                        <input type="text" placeholder="subject" class="contact__input">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <textarea type="text" col ="30" row="10 "placeholder="Message" class="contact__input contact__input--message">
+
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <a href="#" class="button">Send Message</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slider-2">
+                    <div class="grid wide section__wrapper">
+                        <div class="row">
+                            <div class="col l-3 m-3 c-6">
+                                <img src="./assets/img/1.jpg" alt="" class="slider-2__img">
+                            </div>
+                            <div class="col l-3 m-3 c-6">
+                                <img src="./assets/img/5.jpg" alt="" class="slider-2__img">
+                            </div>
+                            <div class="col l-3 m-3 c-6">
+                                <img src="./assets/img/3.jpg" alt="" class="slider-2__img">
+                            </div>
+                            <div class="col l-3 m-3 c-6">
+                                <img src="./assets/img/4.jpg" alt="" class="slider-2__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrapper grid wide section__wrapper">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__item-heading">About Us</h3>
+                        <p class="footer__item-text">Lorem Ipsum Dolor Sit Amet.</p>
+                        <p class="footer__item-text">Consectetur Adipisicing Elit.</p>
+                        <p class="footer__item-text">Assumenda Quas Magni Pariatur Est.</p>
+                        <p class="footer__item-text">Accusantium Voluptas Enim Nemo.</p>
+                        <p class="footer__item-text">Facilis Sit Debitis.</p>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__item-heading">About Us</h3>
+                        
+                        <ul class="footer__category-list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">India</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">USA</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Japan</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">France</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Egypt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Australia</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">New Zealand</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__item-heading">About Us</h3>
+                        
+                        <ul class="footer__category-list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">India</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">USA</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Japan</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">France</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Egypt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Australia</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">New Zealand</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__item-heading">About Us</h3>
+                        
+                        <ul class="footer__category-list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">India</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">USA</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Japan</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">France</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Egypt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Australia</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">New Zealand</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="author">
+                    <h1 class="author__signed">Created By <span class="author__name">Phong Thai</span> | All Rights Reserved!</h1>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
