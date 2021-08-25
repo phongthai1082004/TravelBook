@@ -15,11 +15,9 @@
         padding : 13.2px 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-
     .nav__show-menu:checked ~ .nav {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
     .nav__link {
         margin: 13.2px;
         padding:13.2px;
@@ -28,17 +26,19 @@
         overflow: hidden;
         width:95%;
     }
-
     .nav__icons--menu {
         display:block;
         margin:0 20px;
     }
-
     .footer__wrapper {
         padding: 0 20px;
     }
-
-
+    .slider__img--tablet {
+        display: block;
+    }
+    .slider__img {
+        display: none;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -51,24 +51,62 @@
     .footer {
         text-align: center;
     }
-
-    .letter {
-        font-size: 2.0rem;
-        display: inline-flex;
-        align-items: center;
-        background-color: rgb(255,237,204);
-        height: 51px;
-        color: var(--primary-color);
-        padding: 2px 10px;
-        margin: 0 2px;
-        border-radius:4px;
-        cursor: default;
-    }
     .login__form {
         margin: 0 auto;
     }
-    
     .wrapper {
         overflow: hidden;
+    }
+}
+
+@media (max-width:350px) {
+    .letter {
+        font-size: 2.5rem;
+        height: 31px;
+        padding: 2px 5px;
+    }
+    .button {
+        font-size: 1.4rem;
+        padding: 4px 15px;
+        margin-top:10px;
+        display:inline-flex;
+        height: 31px;
+    }
+    .nav__icons {
+        margin-right: 20px;
+    }
+    .nav__icons--menu {
+        display:block;
+        margin: 0 15px;
+    }
+    .nav__link {
+        width: 90%;
+    }
+    .package__img {
+        height:unset;
+        display:block;
+    }
+    .gallery__img {
+        width: 100%;
+        display:block;
+        min-height: unset;
+    }
+    .gallery__overlay-des {
+        display:none;
+    }
+    .gallery__overlay-heading {
+        margin-bottom: 5px;
+        line-height: 3.0rem;
+    }
+    .slider__heading {
+        font-size: 3.0rem;
+    }
+    
+    .slider__img--mobile {
+        display: block;
+    }
+    .slider__img--tablet,
+    .slider__img {
+        display: none;
     }
 }
