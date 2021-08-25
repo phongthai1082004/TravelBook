@@ -290,6 +290,7 @@
 .package__img {
     width:100%;
     display:block;
+    height: 256px;
 }
 
 .package__item {
