@@ -51,4 +51,24 @@
     .footer {
         text-align: center;
     }
+
+    .letter {
+        font-size: 2.0rem;
+        display: inline-flex;
+        align-items: center;
+        background-color: rgb(255,237,204);
+        height: 51px;
+        color: var(--primary-color);
+        padding: 2px 10px;
+        margin: 0 2px;
+        border-radius:4px;
+        cursor: default;
+    }
+    .login__form {
+        margin: 0 auto;
+    }
+    
+    .wrapper {
+        overflow: hidden;
+    }
 }

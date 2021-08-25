@@ -145,7 +145,7 @@
     position:fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -250%);
+    transform: translate(-50%, -400%);
     background-color: var(--white-background);
     padding: 15px 20px;
     border-radius: 4px;
