@@ -135,9 +135,7 @@
     z-index:2;
 }
 
-.login__form-wrapper {
-    margin:auto;
-}
+
 
 .login__form {
     position:fixed;
@@ -147,9 +145,10 @@
     background-color: var(--white-background);
     padding: 15px 20px;
     border-radius: 4px;
-    max-width: 500px;
     margin: 0 20px;
     z-index:3;
+    max-width:500px;
+    min-width:300px;
 }
 
 #login__section:checked ~ .login__overlay {
