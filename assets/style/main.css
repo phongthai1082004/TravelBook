@@ -64,6 +64,10 @@
     margin-left: 40px;
 }
 
+.nav__icon.nav__icon--no-hover {
+    cursor: default;
+}
+
 
 
 .nav__icon {
