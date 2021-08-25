@@ -376,7 +376,7 @@
 .gallery__img {
     width: 100%;
     display:block;
-    min-height: 246px;
+    min-height: 300px;
 }
 
 .gallery__item-wrapper {
