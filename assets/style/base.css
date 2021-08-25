@@ -21,6 +21,10 @@ html {
     transition: all 0.2s linear;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 
 .button {
     font-size: 1.7rem;
@@ -28,12 +32,12 @@ html {
     background-color: var(--primary-color);
     padding: 8px 30px;
     margin-top:10px;
-    display:inline-flex;
     height: 43px;
-    align-items: center;
-    justify-content: center;
     border: 2px solid transparent;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button--full {
